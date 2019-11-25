@@ -14,6 +14,30 @@ def index(request):
 def register(request):
     return render(request, 'polls/signUp.html')
 
+def city1(request):
+    return render(request, 'polls/almaty_hotels.html')
+
+def city2(request):
+    return render(request, 'polls/astana_hotels.html')
+
+def city3(request):
+    return render(request, 'polls/dubai_hotels.html')
+
+def city4(request):
+    return render(request, 'polls/london_hotels.html')
+
+def city5(request):
+    return render(request, 'polls/moscow_hotels.html')
+
+def city6(request):
+    return render(request, 'polls/new-york_hotels.html')
+
+def city7(request):
+    return render(request, 'polls/paris_hotels.html')
+
+def city8(request):
+    return render(request, 'polls/petersburg_hotels.html')
+
 
 # Вариант регистрации на базе класса FormView
 class MyRegisterFormView(FormView):
