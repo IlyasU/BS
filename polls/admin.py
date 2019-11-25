@@ -12,4 +12,3 @@ class CountryAdmin(admin.ModelAdmin):
     inlines = [ChoiceInline]
 
 admin.site.register(Countries, CountryAdmin)
-
