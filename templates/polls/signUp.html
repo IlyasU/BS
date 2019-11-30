@@ -3,38 +3,76 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Регистрация</title>
-    <link rel="stylesheet" type="text/css" href="{% static "css/signUpStyle.css" %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href={% static "font-awesome/css/font-awesome.min.css" %}>
+    <title>Booking</title>
 </head>
 <body>
-    <form>
+    <header class="header">
         <div class="container">
-            <h1>Регистрация</h1>
-            <p>Пожалуйста, заполните все поля для регистации</p>
-
-            <div class="input">
-                <label for="firstname"><b>Имя</b></label>
-                <input type="text" placeholder="Введите имя" name="name" required>
-
-                <label for="lastname"><b>Фамилия</b></label>
-                <input type="text" placeholder="Введите фамилию" name="lastname" required>
-
-                <label for="nickname"><b>Никнейм</b></label>
-                <input type="text" placeholder="Введите никнейм" name="тшслтфьу" required>
-
-                <label for="email"><b>Эл. почта</b></label>
-                <input type="text" placeholder="Введите эл. почту" name="email" required>
-
-                <label for="psw"><b>Пароль</b></label>
-                <input type="password" placeholder="Введите пароль" name="psw" required>
-
-                <label for="psw-repeat"><b>Повторите пароль</b></label>
-                <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="/static/images/logo1.png" alt="" weight="150" height="60">
+                </div>
             </div>
-
-                <button type="submit" class="registerbtn">Зарегистрироваться</button>
-
         </div>
-    </form>
+    </header>
+    <br><br><br><br><br><br><br><br>
+    {% load crispy_forms_tags %}
+    {% block content %}
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Join Today</legend>
+                {{form|crispy}}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already Have An Account? <a class="ml-2" a href="{% url 'index' %}">Sign In</a>
+            </small>
+        </div>
+    </div>
+{% endblock content %}
+<br><br>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
+                    <span>© 2019 BTB</span>
+                </div>
+                <div class="footer__social">
+                    <a class="footer-social-item facebook" href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a class="footer-social-item vk" href="">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <span>Вконтакте</span>
+                    </a>
+                    <a class="footer-social-item instagram" href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a class="footer-social-item twitter" href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                <div class="footer__contact">
+                    <a href="#">8 747 122-92-02</a>
+                    <a href="#">8 701 453-66-10</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-fall"></div>
 </body>
 </html>

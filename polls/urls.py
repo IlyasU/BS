@@ -1,5 +1,4 @@
 from django.conf.urls import url, include
-from polls.views import MyRegisterFormView
 from . import views
 
 from django.conf.urls.static import static
@@ -7,8 +6,7 @@ from django.conf import settings
 
 urlpatterns = [
      url(r'^$', views.index, name='index'),
-     url(r'^registration/$', views.register, name='register'),
-     url(r'^signUp.html/$', views.register, name='registration'),
+     url(r'^signUp', views.register, name='registration'),
      url(r'^almaty_hotels.html', views.city1, name='almaty'),
      url(r'^astana_hotels.html', views.city2, name='astana'),
      url(r'^dubai_hotels.html', views.city3, name='dubai'),
