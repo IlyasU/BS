@@ -2,6 +2,8 @@ from django.db import models
 
 import datetime
 from django.utils import timezone
+from django.contrib.auth.models import User
+
 
 class Countries(models.Model):
    country_text = models.CharField(max_length=200)

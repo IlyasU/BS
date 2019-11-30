@@ -119,3 +119,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIAFILES_DIRS = [os.path.join(BASE_DIR, 'media'), ]
+
+LOGIN_REDIRECT_URL = 'index_logged'
+
+LOGIN_URL = 'login'
