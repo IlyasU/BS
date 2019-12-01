@@ -13,11 +13,19 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'index_logged' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% else %}
                     <a href="{% url 'index' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% endif %}
                 </div>
                 <nav class="nav">
-                    <a href="signUp.html" class="nav__link">Зарегистрироваться</a>
-                    <a href="#" class="nav__link login-link">Личный кабинет</a>
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="nav__link">Выйти</a>
+                    {% else %}
+                        <a href="{% url 'registration' %}" class="nav__link">Зарегистрироваться</a>
+                        <a href="{% url 'log' %}" class="nav__link login-link">Личный кабинет</a>
+                    {% endif %}
                 </nav>
             </div>
         </div>
@@ -29,7 +37,7 @@
                 <h1 class="main__title">Отели Нью-Йорка</h1>
                 <div class="hotel__item">
                     <img class="hotel11" src="/static/images/hotel11.jpg" alt="hotel11" width="200" height="200">
-                    <h2 class="hotel__title"><a href="#">Four Seasons Hotel New York Downtown</a></h2>
+                    <h2 class="hotel__title"><a href="{% url 'info_hotel3' %}">Four Seasons Hotel New York Downtown</a></h2>
                     <i class="stars">
                         <svg aria-hidden="true" class="bk-icon -sprite-ratings_stars_5" focusable="false" height="10" width="54" viewBox="0 0 65 12" role="presentation">
                             <path d="m13 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.1-.5-.1-.5 0l-1.5 4-4.6.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3h.3l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.4 3.5-2.5c.1 0 .1-.1.1-.2zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5z" fill="#feba02">
@@ -43,7 +51,7 @@
 
                 <div class="hotel__item">
                     <img class="hotel12" src="/static/images/hotel12.jpg" alt="hotel12" width="200" height="200">
-                    <h2 class="hotel__title"><a href="#">Trump International New York</a></h2>
+                    <h2 class="hotel__title"><a href="{% url 'info_hotel4' %}">Trump International New York</a></h2>
                     <i class="stars">
                         <svg aria-hidden="true" class="bk-icon -sprite-ratings_stars_5" focusable="false" height="10" width="54" viewBox="0 0 65 12" role="presentation">
                             <path d="m13 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.1-.5-.1-.5 0l-1.5 4-4.6.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3h.3l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.4 3.5-2.5c.1 0 .1-.1.1-.2zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5z" fill="#feba02">
@@ -90,89 +98,5 @@
         </div>
     </footer>
 
-    <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
-        <form class="login-form" action="#" method="post">
-            <p>
-                <label class="visually-hidden" for="user-login">Логин</label>
-                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-            </p>
-            <p>
-                <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-            </p>
-            <p class="login-help">
-                <label class="login-checkbox">
-                    <input type="checkbox" name="remember" class="visually-hidden">
-                    <span class="checkbox-indicator"></span>
-                    Запомните меня
-                </label>
-                <a class="restore" href="#">Я забыл пароль!</a>
-            </p>
-            <button class="buttonIn" type="submit">Войти</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-    </section>
-
-    <div class="bg-fall"></div>
-
-    <script>
-        var link = document.querySelector(".login-link");
-        var popup = document.querySelector(".modal-login");
-        var bg = document.querySelector(".bg-fall");
-        var close = popup.querySelector(".modal-close");
-        var form = popup.querySelector("form");
-        var login = popup.querySelector("[name=login]");
-        var password = popup.querySelector("[name=password]");
-        var isStorageSupport = true;
-        var storage = "";
-
-        try {
-            storage = localStorage.getItem("login");
-        } catch (err) {
-            isStorageSupport = false;
-        }
-        link.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-show");
-            bg.style.display = 'block';
-            login.focus();
-            if (storage) {
-                login.value = storage;
-                password.focus();
-            } else {
-                login.focus();
-            }
-        });
-        close.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-            popup.classList.remove("modal-error");
-            bg.style.display = 'none';
-        });
-        form.addEventListener("submit", function (evt) {
-            if (!login.value || !password.value) {
-                evt.preventDefault();
-                popup.classList.remove("modal-error");
-                popup.offsetWidth = popup.offsetWidth;
-                popup.classList.add("modal-error");
-            } else {
-                if (isStorageSupport) {
-                    localStorage.setItem("login", login.value);
-                }
-            }
-        });
-        window.addEventListener("keydown", function (evt) {
-            if (evt.keyCode === 27) {
-                evt.preventDefault();
-                if (popup.classList.contains("modal-show")) {
-                    popup.classList.remove("modal-show");
-                    popup.classList.remove("modal-error");
-                    bg.style.display = 'none';
-                }
-            }
-        });
-    </script>
 </body>
 </html>

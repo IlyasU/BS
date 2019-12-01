@@ -18,11 +18,19 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'index_logged' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% else %}
                     <a href="{% url 'index' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% endif %}
                 </div>
                 <nav class="nav">
-                        <a href="{% url "registration" %}" class="nav__link">Зарегистрироваться</a>
-                        <a href="{% url "log" %}" class="nav__link login-link">Личный кабинет</a>
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="nav__link">Выйти</a>
+                    {% else %}
+                        <a href="{% url 'registration' %}" class="nav__link">Зарегистрироваться</a>
+                        <a href="{% url 'log' %}" class="nav__link login-link">Личный кабинет</a>
+                    {% endif %}
                 </nav>
             </div>
         </div>
@@ -163,35 +171,6 @@
             </div>
         </div>
     </div>
-{% comment %}
-{% block content %}
-    <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
-        <form class="login-form" action="#" method="post">
-            {% csrf_token %}
-            <p>
-                <label class="visually-hidden" for="user-login">Логин</label>
-                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-            </p>
-            <p>
-                <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-            </p>
-            <p class="login-help">
-                <label class="login-checkbox">
-                    <input type="checkbox" name="remember" class="visually-hidden">
-                    <span class="checkbox-indicator"></span>
-                    Запомните меня
-                </label>
-                <a class="restore" href="#">Я забыл пароль!</a>
-            </p>
-            <button class="buttonIn" type="submit">Войти</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-    </section>
-{% endblock content %}
-{% endcomment %}
 
     <footer class="footer">
         <div class="container">
@@ -225,64 +204,9 @@
         </div>
     </footer>
     <div class="bg-fall"></div>
-    {% comment %}
-    <script>
-        var link = document.querySelector(".login-link");
-        var popup = document.querySelector(".modal-login");
-        var bg = document.querySelector(".bg-fall");
-        var close = popup.querySelector(".modal-close");
-        var form = popup.querySelector("form");
-        var login = popup.querySelector("[name=login]");
-        var password = popup.querySelector("[name=password]");
-        var isStorageSupport = true;
-        var storage = "";
 
-        try {
-            storage = localStorage.getItem("login");
-        } catch (err) {
-            isStorageSupport = false;
-        }
-        link.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-show");
-            login.focus();
-            if (storage) {
-                login.value = storage;
-                password.focus();
-            } else {
-                login.focus();
-            }
-        });
-        close.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-            popup.classList.remove("modal-error");
-        });
-        form.addEventListener("submit", function (evt) {
-            if (!login.value || !password.value) {
-                evt.preventDefault();
-                popup.classList.remove("modal-error");
-                popup.offsetWidth = popup.offsetWidth;
-                popup.classList.add("modal-error");
-            } else {
-                if (isStorageSupport) {
-                    localStorage.setItem("login", login.value);
-                }
-            }
-        });
-        window.addEventListener("keydown", function (evt) {
-            if (evt.keyCode === 27) {
-                evt.preventDefault();
-                if (popup.classList.contains("modal-show")) {
-                    popup.classList.remove("modal-show");
-                    popup.classList.remove("modal-error");
-                }
-            }
-        });
-    </script>
-    {% endcomment %}
     <script src={% static 'libs/jquery/jquery-3.4.1.min.js' %}></script>
-    <script src={% static 'owlcarousel/owl.carousel.min.js' %}></script>
+    <script src={% static 'libs/owlcarousel/owl.carousel.min.js' %}></script>
     <script src={% static 'js/script.js' %}></script>
 </body>
 </html>

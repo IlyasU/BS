@@ -18,10 +18,19 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'index_logged' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% else %}
                     <a href="{% url 'index' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% endif %}
                 </div>
                 <nav class="nav">
-                    <a class="nav-item nav-link" href="{% url 'index' %}">Выйти</a>
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="nav__link">Выйти</a>
+                    {% else %}
+                        <a href="{% url 'registration' %}" class="nav__link">Зарегистрироваться</a>
+                        <a href="{% url 'log' %}" class="nav__link login-link">Личный кабинет</a>
+                    {% endif %}
                 </nav>
             </div>
         </div>
@@ -94,7 +103,7 @@
                         <img class="city__photo" src="/static/images/city1.jpg" alt="img">
 
                         <div class="city__title">
-                            <a href="{% url 'new-york' %}"><span>Нью-Йорк</span></a>
+                            <a href="{% url 'hotels_new-york' %}"><span>Нью-Йорк</span></a>
                         </div>
 
                     </div>
@@ -102,7 +111,7 @@
                         <img class="city__photo" src="/static/images/city2.jpg" alt="img">
 
                         <div class="city__title">
-                            <a href="{% url 'london' %}"><span>Лондон</span></a>
+                            <a href="{% url 'hotels_london' %}"><span>Лондон</span></a>
                         </div>
 
                     </div>
@@ -110,7 +119,7 @@
                         <img class="city__photo" src="/static/images/city3.jpg" alt="img">
 
                         <div class="city__title">
-                            <a href="{% url 'paris' %}"><span>Париж</span></a>
+                            <a href="{% url 'hotels_paris' %}"><span>Париж</span></a>
                         </div>
 
                     </div>
@@ -118,7 +127,7 @@
                         <img class="city__photo" src="/static/images/city4.jpg" alt="img">
 
                         <div class="city__title">
-                            <a href="{% url 'dubai' %}"><span>Дубаи</span></a>
+                            <a href="{% url 'hotels_dubai' %}"><span>Дубаи</span></a>
                         </div>
 
                     </div>
@@ -128,7 +137,7 @@
                         </a>
 
                         <div class="city__title">
-                            <a href="{% url 'moscow' %}"><span>Москва</span></a>
+                            <a href="{% url 'hotels_moscow' %}"><span>Москва</span></a>
                         </div>
 
                     </div>
@@ -136,7 +145,7 @@
                         <img class="city__photo" src="/static/images/city6.jpg" alt="img">
 
                         <div class="city__title">
-                            <a href="{% url 'petersburg' %}"><span>Санкт-Петербург</span></a>
+                            <a href="{% url 'hotels_petersburg' %}"><span>Санкт-Петербург</span></a>
                         </div>
 
                     </div>
@@ -144,7 +153,7 @@
                         <img class="city__photo" src="/static/images/city7.jpg" alt="img">
 
                         <div class="city__title">
-                            <a href="{% url 'astana' %}"><span>Астана</span></a>
+                            <a href="{% url 'hotels_astana' %}"><span>Астана</span></a>
                         </div>
 
                     </div>
@@ -152,7 +161,7 @@
                         <img class="city__photo" src="/static/images/city8.jpg" alt="img">
 
                         <div class="city__title">
-                            <a href="{% url 'almaty' %}"><span>Алматы</span></a>
+                            <a href="{% url 'hotels_almaty' %}"><span>Алматы</span></a>
                         </div>
 
 

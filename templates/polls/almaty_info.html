@@ -1,0 +1,154 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href={% static "css/style.css"%}>
+    <link rel="stylesheet" href={% static "libs/owlcarousel/assets/owl.carousel.min.css"%}>
+    <link rel="stylesheet" href={% static "libs/owlcarousel/assets/owl.theme.default.css"%}>
+    <link rel="stylesheet" href={% static "font-awesome/css/font-awesome.min.css"%}>
+    <title>Shangri-La Hotel</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                   {% if user.is_authenticated %}
+                    <a href="{% url 'index_logged' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% else %}
+                    <a href="{% url 'index' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% endif %}
+                </div>
+                <nav class="nav">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="nav__link">Выйти</a>
+                    {% else %}
+                        <a href="{% url 'registration' %}" class="nav__link">Зарегистрироваться</a>
+                        <a href="{% url 'log' %}" class="nav__link login-link">Личный кабинет</a>
+                    {% endif %}
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="hotel">
+        <div class="container">
+            <div class="hotel__content">
+                <div class="titles">
+                    <h2 class="hotel__title">Almaty</h2>
+                </div>
+            </div>
+
+            <span class="address__hotel">
+                Алматы, Республика Казахстан
+            </span>
+            <div class="photo__hotel">
+                    <div class="container-nav-wrap">
+                        <div class="owl-nav">
+                            <div class="prev">
+                                <i class="fa fa-chevron-left"></i>
+                            </div><div class="next">
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="owl-carousel">
+                    <div class="photo_item">
+                        <img class="hotel__photo" src="/static/images/Almaty-winter-lake_1920x1080.jpg" alt="img">
+                    </div>
+
+                    <div class="photo_item">
+                        <img class="hotel__photo" src="/static/images/Almaty.jpg" alt="img">
+                    </div>
+
+                    <div class="photo_item">
+                        <img class="hotel__photo" src="/static/images/Almaty_1236.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="description">
+        <div class="container">
+            <div class="description-intro">
+                <p>
+Алма́-Ата́[4][5] (каз. Алматы, Almaty (инф.)[6]; до 1921 года — Верный) — город республиканского значения и крупнейший населённый пункт Республики Казахстан, бывшая столица Казахстана (до 1997), Казахской ССР (в составе СССР), Казахской АССР (в составе РСФСР).
+
+По данным на 1 января 2019 года население города — 1 854 556 человек[2]. Город является ядром Алма-Атинской агломерации[7] с населением 2460,4 тыс. чел. на 1 января 2015 года[8].
+                </p>
+                <p>
+С 1927 по 1936 годы Алма-Ата была второй столицей Казахской АССР; с 1936 по 1991 годы — столицей Казахской ССР; с 1991 по 1997 годы — первой столицей Республики Казахстан. Алма-Ата была крупнейшим городом Казахской ССР, затем стала крупнейшим городом Республики Казахстан. Несмотря на утрату статуса политико-административной столицы, она является культурным и финансово-экономическим центром республики и оставалась единственным городом-миллионером страны до 2017 года, вторым таким стала Астана[9]. Город расположен у подножия гор Заилийского Алатау на крайнем юго-востоке республики и имеет своеобразный, довольно мягкий климатический режим с непростой экологической ситуацией.
+
+В 1997 году столицу перенесли в Акмолу (с 6 мая 1998 — Астана, ныне Нур-Султан), однако за Алма-Атой закрепляется статус «Южной столицы Казахстана». С тех пор этот термин очень часто употребляется в прессе и обозначает именно Алма-Ату[10].
+
+В 2006 году, согласно исследованию качества жизни, проведённому консалтинговой компанией «Mercer», Алма-Ата занимала 183 место, поднявшись в сравнении с 2005 годом вверх на одну позицию[11]. Всего исследования были проведены по 215 городам.
+                </p>
+
+                <div class="buttonBook">
+                    <a href="{% url 'index' %}" class="nav__link butBook">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
+                    <span>© 2019 BTB</span>
+                </div>
+                <div class="footer__social">
+                    <a class="footer-social-item facebook" href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a class="footer-social-item vk" href="#">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <span>Вконтакте</span>
+                    </a>
+                    <a class="footer-social-item instagram" href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a class="footer-social-item twitter" href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                <div class="footer__contact">
+                    <a href="#">8 747 122-92-02</a>
+                    <a href="#">8 701 453-66-10</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src={% static "libs/jquery/jquery-3.4.1.min.js"%}></script>
+    <script src={% static "libs/owlcarousel/owl.carousel.min.js"%}></script>
+    <script>
+        $(document).ready(function(){
+            var owl = $('.owl-carousel');
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                items: 1,
+                dots: false,
+            });
+            $('.next').click(function() {
+                owl.trigger('next.owl.carousel');
+            })
+            $('.prev').click(function() {
+                owl.trigger('prev.owl.carousel');
+            })
+        });
+    </script>
+
+</body>
+</html>

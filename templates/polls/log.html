@@ -16,7 +16,11 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'index_logged' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% else %}
                     <a href="{% url 'index' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% endif %}
                 </div>
             </div>
         </div>

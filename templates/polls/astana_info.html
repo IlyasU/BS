@@ -1,0 +1,148 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href={% static "css/style.css"%}>
+    <link rel="stylesheet" href={% static "libs/owlcarousel/assets/owl.carousel.min.css"%}>
+    <link rel="stylesheet" href={% static "libs/owlcarousel/assets/owl.theme.default.css"%}>
+    <link rel="stylesheet" href={% static "font-awesome/css/font-awesome.min.css"%}>
+    <title>Shangri-La Hotel</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                   {% if user.is_authenticated %}
+                    <a href="{% url 'index_logged' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% else %}
+                    <a href="{% url 'index' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% endif %}
+                </div>
+                <nav class="nav">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="nav__link">Выйти</a>
+                    {% else %}
+                        <a href="{% url 'registration' %}" class="nav__link">Зарегистрироваться</a>
+                        <a href="{% url 'log' %}" class="nav__link login-link">Личный кабинет</a>
+                    {% endif %}
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="hotel">
+        <div class="container">
+            <div class="hotel__content">
+                <div class="titles">
+                    <h2 class="hotel__title">Nur-Sultan</h2>
+                </div>
+            </div>
+
+            <span class="address__hotel">
+                Нур-Султан, Республика Казахстан
+            </span>
+            <div class="photo__hotel">
+                    <div class="container-nav-wrap">
+                        <div class="owl-nav">
+                            <div class="prev">
+                                <i class="fa fa-chevron-left"></i>
+                            </div><div class="next">
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="owl-carousel">
+                    <div class="photo_item">
+                        <img class="hotel__photo" src="/static/images/ozero-v-nyu-yorke.jpg" alt="img">
+                    </div>
+
+                    <div class="photo_item">
+                        <img class="hotel__photo" src="/static/images/86b99c6s-1920.jpg" alt="img">
+                    </div>
+
+                    <div class="photo_item">
+                        <img class="hotel__photo" src="/static/images/look.com.ua-134055.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="description">
+        <div class="container">
+            <div class="description-intro">
+                <p>
+Нур-Султа́н (каз. Нұр-Сұлтан[5], досл. рус. «Светлый правитель»[6]) (ранее Акмо́линск, Целиногра́д, Акмола́, Астана́) — столица Республики Казахстан[7] с 10 декабря 1997 года. Акмолинск получил статус города 26 сентября 1862 года. Население города по состоянию на 1 февраля 2019 года составляло 1 082 222 человека[8], что является вторым показателем в Казахстане после Алма-Аты. Статус города-миллионера был достигнут в июне 2017 года, когда население составило 1 002 874 жителя[9]. Нур-Султан расположен на севере страны, на берегах реки Ишим. Административно город разделён на 4 района.
+                </p>
+                <p>
+                   Территория современного города была ранее выгодным пунктом пересечения караванных путей. Археологи обнаруживают в черте города артефакты, датирующиеся эпохой бронзы, ранним железным веком и средневековьем. Так, в 2001, 2005 годах были исследованы могильники эпохи бронзы и раннего железного века Куйгенжар. В 2007 году частично исследован царский курган на улице Сыганак (с 2011 года улица Ш. Калдаякова), расположенный в непосредственной близости от Дворца Независимости. После расширения административной черты Астаны в её пределах (в 11 км от центра города) оказалось городище Бозок (размером 400 на 200 м) — поселение земледельцев, на что указывают остатки арыков на площади 30 га. Поселение в первый раз существовало в VII—VIII веках, потом было заброшено. Вновь поселение существовало в X—XI веках, после чего было снова заброшено и опять восстановлено в XII—XIV веках[37].
+                </p>
+
+                <div class="buttonBook">
+                    <a href="{% url 'index' %}" class="nav__link butBook">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
+                    <span>© 2019 BTB</span>
+                </div>
+                <div class="footer__social">
+                    <a class="footer-social-item facebook" href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a class="footer-social-item vk" href="#">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <span>Вконтакте</span>
+                    </a>
+                    <a class="footer-social-item instagram" href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a class="footer-social-item twitter" href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                <div class="footer__contact">
+                    <a href="#">8 747 122-92-02</a>
+                    <a href="#">8 701 453-66-10</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src={% static "libs/jquery/jquery-3.4.1.min.js"%}></script>
+    <script src={% static "libs/owlcarousel/owl.carousel.min.js"%}></script>
+    <script>
+        $(document).ready(function(){
+            var owl = $('.owl-carousel');
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                items: 1,
+                dots: false,
+            });
+            $('.next').click(function() {
+                owl.trigger('next.owl.carousel');
+            })
+            $('.prev').click(function() {
+                owl.trigger('prev.owl.carousel');
+            })
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+.bg-agile {
+	width: 33%;
+	margin: 0 auto;
+    margin-top: 200px;
+	position: relative;
+	padding: 4em 4em;
+	background:#FFF;
+    border: 2px #000 solid;
+}
+
+.book-appointment h2,.wthree-text h6 {
+	text-align: center;
+	font-size: 30px;
+	color: #cb2918;
+	text-transform: capitalize;
+	margin-bottom: 1.8em;
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+.book-form input[type="text"],.book-form input[type="date"],.book-form input[type="email"], select#country, select#country1 {
+	width: 100%;
+	color: #777;
+	font-size: 0.9em;
+	padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+	outline: none;
+	background: rgba(255, 255, 255, 0.28);
+	border: 1px solid #000;
+	box-sizing: border-box;
+
+}
+
+.book-form input[type="date"] {
+    font-size: 16px;
+}
+
+
+
+
+.book-form input[type="submit"] {
+	text-transform: capitalize;
+	background: #cb2918;
+	color: #ffffff;
+	padding: 0.7em 6em;
+	border: none;
+	border: 2px solid #cb2918;
+	font-weight: 600;
+	font-size: 1em;
+	/* margin-top: 1em; */
+    margin-left:15px;
+	outline: none;
+	letter-spacing: 1px;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	transition: .5s all;
+	cursor: pointer;
+}
+
+.book-form input[type="submit"]:hover{
+	background: transparent;
+	color:#cb2918;
+}

@@ -1,0 +1,148 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href={% static "css/style.css"%}>
+    <link rel="stylesheet" href={% static "libs/owlcarousel/assets/owl.carousel.min.css"%}>
+    <link rel="stylesheet" href={% static "libs/owlcarousel/assets/owl.theme.default.css"%}>
+    <link rel="stylesheet" href={% static "font-awesome/css/font-awesome.min.css"%}>
+    <title>Shangri-La Hotel</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                   {% if user.is_authenticated %}
+                    <a href="{% url 'index_logged' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% else %}
+                    <a href="{% url 'index' %}"><img src="/static/images/logo1.png" alt="" weight="150" height="60"></a>
+                    {% endif %}
+                </div>
+                <nav class="nav">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="nav__link">Выйти</a>
+                    {% else %}
+                        <a href="{% url 'registration' %}" class="nav__link">Зарегистрироваться</a>
+                        <a href="{% url 'log' %}" class="nav__link login-link">Личный кабинет</a>
+                    {% endif %}
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="hotel">
+        <div class="container">
+            <div class="hotel__content">
+                <div class="titles">
+                    <h2 class="hotel__title">Dubai</h2>
+                </div>
+            </div>
+
+            <span class="address__hotel">
+                Дубай, Объединенные Арабские Эмираты
+            </span>
+            <div class="photo__hotel">
+                    <div class="container-nav-wrap">
+                        <div class="owl-nav">
+                            <div class="prev">
+                                <i class="fa fa-chevron-left"></i>
+                            </div><div class="next">
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="owl-carousel">
+                    <div class="photo_item">
+                        <img class="hotel__photo" src="/static/images/dubay_zdaniya_vid_sverhu_panorama_ogni_goroda_58882_1920x1080.jpg" alt="img">
+                    </div>
+
+                    <div class="photo_item">
+                        <img class="hotel__photo" src="/static/images/3a8918454fb4c7c5087679ade711516f.jpg" alt="img">
+                    </div>
+
+                    <div class="photo_item">
+                        <img class="hotel__photo" src="/static/images/thumb-1920-1020217.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="description">
+        <div class="container">
+            <div class="description-intro">
+                <p>
+Дуба́й[2] (араб. دبيّ‎) — крупнейший город в Объединённых Арабских Эмиратах и глубоководный морской порт, административный центр эмирата Дубай[3], важнейший торговый и финансовый центр ОАЭ[4] и всего Ближнего Востока[5]. Расположен на берегу Персидского залива.
+                </p>
+                <p>
+В период 1954—1971 г. являлся административным центром британского протектората Договорный Оман[4]. В Дубае проводятся разнообразные международные конференции, фестивали, выставки и т. п.[6], планируется проведение всемирной выставки Экспо-2020[7].
+                </p>
+
+                <div class="buttonBook">
+                    <a href="{% url 'index' %}" class="nav__link butBook">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
+                    <span>© 2019 BTB</span>
+                </div>
+                <div class="footer__social">
+                    <a class="footer-social-item facebook" href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a class="footer-social-item vk" href="#">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <span>Вконтакте</span>
+                    </a>
+                    <a class="footer-social-item instagram" href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a class="footer-social-item twitter" href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                <div class="footer__contact">
+                    <a href="#">8 747 122-92-02</a>
+                    <a href="#">8 701 453-66-10</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src={% static "libs/jquery/jquery-3.4.1.min.js"%}></script>
+    <script src={% static "libs/owlcarousel/owl.carousel.min.js"%}></script>
+    <script>
+        $(document).ready(function(){
+            var owl = $('.owl-carousel');
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                items: 1,
+                dots: false,
+            });
+            $('.next').click(function() {
+                owl.trigger('next.owl.carousel');
+            })
+            $('.prev').click(function() {
+                owl.trigger('prev.owl.carousel');
+            })
+        });
+    </script>
+
+</body>
+</html>
