@@ -2,134 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0083d67c-6328-43f1-b254-3a6de4255668" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/bookStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bookingStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/358869-admin_1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/3a8918454fb4c7c5087679ade711516f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/4972ba038d986ee478d0123a723bd576.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/690945823.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/722908464.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/86b99c6s-1920.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/France_Houses_Roads_Autumn_Paris_Street_536534_1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/New-York-1920x1200-003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/Russia_Moscow_Houses_Rivers_Marinas_Evening_Winter_544522_1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/arena.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/dubay_zdaniya_vid_sverhu_panorama_ogni_goroda_58882_1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo34.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo36.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo38.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo39.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo41.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo42.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo43.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo45.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo46.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hotel_photo9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/london_angliya_velikobritaniya_tauerskiy_most_temza_58120_1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/london_bi_ben_london_big_ben_vecher_reka_zdaniya_vid_sverhu_chb_30804_1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/london_velikobritaniya_nochnoj_gorod_vid_sverkhu_118643_1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/look.com.ua-134055.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/moskva_rossiya_most_nochnoj_gorod_fonari_109347_1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/ozero-v-nyu-yorke.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/parizh_franciya_luvr_59233_1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/parizh_frantsiya_reka_sena_most_99842_1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/thumb-1920-1020217.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/wpapers_ru_Ночной-Нью-Йорк.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/congrats.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel14.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel15.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel16.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/hotel9.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OurDB" beforeDir="false" afterPath="$PROJECT_DIR$/OurDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/assets/ajax-loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/assets/ajax-loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/assets/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/assets/owl.carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/assets/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/assets/owl.carousel.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/assets/owl.theme.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/assets/owl.theme.default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/assets/owl.theme.default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/assets/owl.theme.default.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/assets/owl.theme.green.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/assets/owl.theme.green.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/assets/owl.theme.green.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/assets/owl.theme.green.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/assets/owl.video.play.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/assets/owl.video.play.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/owl.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/owl.carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/owlcarousel/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/libs/owlcarousel/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/almaty_hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/almaty_hotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/almaty_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/almaty_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/astana_hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/astana_hotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/astana_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/astana_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/dubai_hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/dubai_hotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/dubai_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/dubai_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/polls/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/book.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/polls/index_logged.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/index_logged.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/london_hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/london_hotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/london_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/london_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/moscow_hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/moscow_hotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/moscow_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/moscow_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/new-york_hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/new-york_hotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/new-york_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/new-york_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/paris_hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/paris_hotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/paris_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/paris_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/petersburg_hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/petersburg_hotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/petersburg_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/petersburg_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/signUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/signUp.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -337,7 +219,11 @@
       <workItem from="1575011734152" duration="5269000" />
       <workItem from="1575017579945" duration="3368000" />
       <workItem from="1575024740186" duration="15062000" />
-      <workItem from="1575188372613" duration="15188000" />
+      <workItem from="1575188372613" duration="16317000" />
+      <workItem from="1575208025245" duration="94000" />
+      <workItem from="1575216434699" duration="2834000" />
+      <workItem from="1575276455561" duration="1292000" />
+      <workItem from="1575278716677" duration="6350000" />
     </task>
     <servers />
   </component>

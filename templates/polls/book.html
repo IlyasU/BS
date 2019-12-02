@@ -35,23 +35,25 @@
             </div>
         </div>
     </header>
-
+{% block content %}
     <div class="bg-agile">
         <div class="book-appointment">
             <h1>Бронирование</h1>
             <div class="book-form agileits-login">
-                <form class="booking-form" action="{% url 'congrats' %}" method="post">
+
+
+                <form action="{% url 'congrats' %}" method="POST">
                     {% csrf_token %}
                     <div class="firstname_field">
                         <label>First name : </label>
                         <div class="form-text">
-                            <input type="text" name="Name" placeholder="" required="">
+                            <input type="text" name="name" placeholder="" required="">
                         </div>
                     </div>
                     <div class="lastname_field">
                         <label>Last name : </label>
                         <div class="form-text">
-                            <input type="text" name="Name" placeholder="" required="">
+                            <input type="text" name="lastname" placeholder="" required="">
                         </div>
                     </div>
                     <div class="email_field">
@@ -63,7 +65,7 @@
                     <div class="phone_field">
                         <label>Phone number : </label>
                         <div class="form-text">
-                            <input type="text" name="Phone no" placeholder="" required="">
+                            <input type="text" name="phone" placeholder="" required="">
                         </div>
                     </div>
                     <div class="address_field">
@@ -104,6 +106,8 @@
 
                     <input type="submit" value="Reservation">
                 </form>
+
+{% endblock %}
             </div>
 
         </div>

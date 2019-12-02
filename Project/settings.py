@@ -123,3 +123,14 @@ MEDIAFILES_DIRS = [os.path.join(BASE_DIR, 'media'), ]
 LOGIN_REDIRECT_URL = 'index_logged'
 
 LOGIN_URL = 'login'
+
+EMAIL_HOST = 'smtp.gmail.com'
+
+EMAIL_PORT = 587
+
+EMAIL_HOST_USER = 'iitusis12@gmail.com'
+
+EMAIL_HOST_PASSWORD = 'iitu12345678'
+
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False

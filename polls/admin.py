@@ -1,5 +1,7 @@
 from django.contrib import admin
 from .models import Countries, Choice #this line added
+from .models import Booking
+
 class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 3
@@ -12,3 +14,4 @@ class CountryAdmin(admin.ModelAdmin):
     inlines = [ChoiceInline]
 
 admin.site.register(Countries, CountryAdmin)
+admin.site.register(Booking)

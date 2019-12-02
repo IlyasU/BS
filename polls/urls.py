@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from . import views
-
+from .views import BookingView
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -43,7 +43,7 @@ urlpatterns = [
      url(r'^info_hotel16/', views.info_hotel16, name='info_hotel16'),
 
      url(r'^reservation/', views.reservation, name='reservation'),
-     url(r'^congrats/', views.congrats, name='congrats'),
+     url(r'^congrats/', BookingView.as_view(), name='congrats'),
 
      url(r'^almaty_info/', views.city1, name='almaty'),
      url(r'^astana_info/', views.city2, name='astana'),

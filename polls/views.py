@@ -1,14 +1,9 @@
-from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import get_object_or_404
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from django.urls import reverse
-from .models import Countries, Choice
-
-from django.contrib.auth.forms import UserCreationForm
-from django.views.generic.edit import FormView
 from .forms import UserRegisterForm
-from django.contrib import auth
+from django.core.mail import send_mail
+from .forms import BookingForm
+from django.views.generic import View
 
 def index(request):
     return render(request, 'polls/index.html')
@@ -91,8 +86,19 @@ def info_hotel16(request):
 def reservation(request):
     return render(request, 'polls/book.html')
 
-def congrats(request):
-    return render(request, 'polls/congrats.html')
+class BookingView(View):
+    def post(self, request):
+        if request.method == 'POST':
+            book = BookingForm(request.POST)
+            if book.is_valid():
+                book.save()
+
+        send_mail('Hello from KirIlTam(KIT)',
+                  'Hello There! You have a new reservation, check your order on AdminPage',
+                  'iitusis12@gmail.com',
+                  ['dfeera1@gmail.com'],
+                  fail_silently=False)
+        return render(request, 'polls/congrats.html')
 
 def city1(request):
     return render(request, 'polls/almaty_info.html')
@@ -117,5 +123,8 @@ def city7(request):
 
 def city8(request):
     return render(request, 'polls/petersburg_info.html')
+
+
+
 
 
