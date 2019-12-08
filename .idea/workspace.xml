@@ -4,13 +4,11 @@
     <list default="true" id="0083d67c-6328-43f1-b254-3a6de4255668" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OurDB" beforeDir="false" afterPath="$PROJECT_DIR$/OurDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/polls/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/polls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/polls/index_logged.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/index_logged.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +28,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="OurDB" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -172,6 +175,16 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -223,7 +236,11 @@
       <workItem from="1575208025245" duration="94000" />
       <workItem from="1575216434699" duration="2834000" />
       <workItem from="1575276455561" duration="1292000" />
-      <workItem from="1575278716677" duration="6350000" />
+      <workItem from="1575278716677" duration="6664000" />
+      <workItem from="1575361386822" duration="1971000" />
+      <workItem from="1575396363647" duration="152000" />
+      <workItem from="1575565646699" duration="5953000" />
+      <workItem from="1575787517457" duration="2230000" />
     </task>
     <servers />
   </component>

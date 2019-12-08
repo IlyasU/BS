@@ -35,8 +35,7 @@ class Booking(models.Model):
     email = models.EmailField('Почта', max_length=120, blank=True, null=True)
     phone = models.CharField('Телефон', max_length=120)
     address = models.CharField('Домашний Адрес', max_length=120)
-
-
+    people = models.CharField('Количество Человек', max_length=120, null=True)
 
     def __str__(self):
         return self.name

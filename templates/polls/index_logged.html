@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "css/signUpStyle.css" %}">
-    <link rel="stylesheet" href={% static "owlcarousel/assets/owl.carousel.min.css" %}>
-    <link rel="stylesheet" href={% static "owlcarousel/assets/owl.theme.default.css" %}>
+    <link rel="stylesheet" href={% static "/libs/owlcarousel/assets/owl.carousel.min.css" %}>
+    <link rel="stylesheet" href={% static "/libs/owlcarousel/assets/owl.theme.default.css" %}>
     <link rel="stylesheet" href={% static "font-awesome/css/font-awesome.min.css" %}>
     <title>Booking</title>
 </head>
@@ -36,27 +36,72 @@
         </div>
     </header>
 
+        <script>
+        function CheckForm() {
+            var x = document.forms["myForm"]["fname"].value;
+                if (x === "almaty") {
+                    window.open('hotels_almaty');
+                }
+                else if(x === "Almaty"){
+                    window.open('hotels_almaty');
+                }
+                else if(x === "astana"){
+                    window.open('hotels_astana');
+                }
+                else if(x === "Astana"){
+                    window.open('hotels_astana');
+                }
+                else if(x === "paris"){
+                    window.open('hotels_paris');
+                }
+                else if(x === "Paris"){
+                    window.open('hotels_paris');
+                }
+                else if(x === "dubai"){
+                    window.open('hotels_dubai');
+                }
+                else if(x === "Dubai"){
+                    window.open('hotels_dubai');
+                }
+                else if(x === "london"){
+                    window.open('hotels_london');
+                }
+                else if(x === "London"){
+                    window.open('hotels_london');
+                }
+                else if(x === "moscow"){
+                    window.open('hotels_moscow');
+                }
+                else if(x === "Moscow"){
+                    window.open('hotels_moscow');
+                }
+                else if(x === "petersburg"){
+                    window.open('hotels_petersburg');
+                }
+                else if(x === "Petersburg"){
+                    window.open('hotels_petersburg');
+                }
+                else if(x === "new-york"){
+                    window.open('hotels_new-york');
+                }
+                else if(x === "New-York"){
+                    window.open('hotels_new-york');
+                }
+        }
+    </script>
+
     <div class="intro">
         <div class="intro__banner">
             <h1 class="intro__title">Забронируйте отель по выгодной цене!</h1>
         </div>
         <div class="book-form">
-            <form action="#" method="post" class="formm">
+            <form name="myForm" class="formm" action="" onsubmit="return CheckForm()" method="POST">
+                        {% csrf_token %}
                 <div class="form_items location_table">
-                    <!-- <label> Travel place</label> -->
-                    <select class="form-control">
-                        <option>Укажите место </option>
-                        <option>London</option>
-                        <option>Paris</option>
-                        <option>New-York</option>
-                        <option>Moscow</option>
-                        <option>Dubai</option>
-                        <option>St. Petersburg</option>
-                        <option>Almaty</option>
-                        <option>Astana</option>
-
-                    </select>
-                </div>
+                        <input type="text" name="fname" value="" method='POST' placeholder="Search here" >
+                        <input type="submit" name="Search" value="Search">
+        </div>
+                </form>
                 <div class="form_items from_in__table">
                     <input type="date" class="form-control"  id="date" name="date" placeholder="приезд" required>
                 </div>

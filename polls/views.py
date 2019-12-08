@@ -94,7 +94,7 @@ class BookingView(View):
                 book.save()
 
         send_mail('Hello from KirIlTam(KIT)',
-                  'Hello There! You have a new reservation, check your order on AdminPage',
+                  'Hello Admin! You have a new reservation, check your order on AdminPage',
                   'iitusis12@gmail.com',
                   ['dfeera1@gmail.com'],
                   fail_silently=False)

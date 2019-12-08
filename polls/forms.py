@@ -14,4 +14,4 @@ class UserRegisterForm(UserCreationForm):
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = ['name', 'lastname', 'email', 'phone', 'address']
+        fields = ['name', 'lastname', 'email', 'phone', 'address', 'people']
