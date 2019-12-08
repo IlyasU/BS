@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0083d67c-6328-43f1-b254-3a6de4255668" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OurDB" beforeDir="false" afterPath="$PROJECT_DIR$/OurDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/index_logged.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/index_logged.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/wsgi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +234,8 @@
       <workItem from="1575361386822" duration="1971000" />
       <workItem from="1575396363647" duration="152000" />
       <workItem from="1575565646699" duration="5953000" />
-      <workItem from="1575787517457" duration="2230000" />
+      <workItem from="1575787517457" duration="2735000" />
+      <workItem from="1575824747893" duration="1803000" />
     </task>
     <servers />
   </component>
