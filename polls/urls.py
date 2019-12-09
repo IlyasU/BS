@@ -9,6 +9,7 @@ urlpatterns = [
      url(r'^User_logged', views.index_logged, name='index_logged'),
      url(r'^signUp/', views.register, name='registration'),
      url(r'^booking/', views.booking, name='booking'),
+     url(r'^ERROR404/', views.error404, name='ERROR404'),
 
      url(r'^hotels_london/', views.hotels_london, name='hotels_london'),
      url(r'^info_hotel/', views.info_hotel1, name='info_hotel1'),

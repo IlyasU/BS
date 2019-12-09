@@ -11,6 +11,9 @@ def index(request):
 def index_logged(request):
     return render(request, 'polls/index_logged.html')
 
+def error404(request):
+    return render(request, 'polls/404.html')
+
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
